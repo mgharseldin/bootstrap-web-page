@@ -275,18 +275,18 @@ header {
 	z-index: 5;
 }
 .tm_navbar .nav li a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
-	color: #ffcbd2;
+	color: #B00051;
 	text-decoration: none;
 }
 .tm_navbar .nav > .active > a, .tm_navbar .nav > .active > a:hover, .tm_navbar .nav > .active > a:focus {
-	color: #ffcbd2;
+	color: #B00051;
 	background: transparent;
 }
 .tm_navbar .nav > li.sfHover.active > a .sf-sub-indicator, .tm_navbar .nav > li.active > a .sf-sub-indicator {
 	background-position: 0 0;
 }
 .tm_navbar .nav > li.sfHover > a, .tm_navbar .nav > li.sfHover > a:hover, .tm_navbar .nav > li > a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
-	color: #ffcbd2;
+	color: #B00051;
 	background: transparent;
 }
 /*---------submenu1-------------*/
@@ -300,7 +300,7 @@ header {
 	list-style: none;
 	zoom: 1;
 	z-index: 11;
-	background: #eb5368;
+	background: #B00051;
 	margin: 0;
 	text-align: center;
 }
@@ -377,11 +377,11 @@ header {
 	background: url(../img/dotted2.png) top center repeat-x;
 }
 .tm_navbar .nav ul ul li a {
-	color: #eb5368;
+	color: #B00051;
 	text-shadow: none;
 }
 .tm_navbar .nav ul ul li a:hover {
-	color: #474848;
+	color: #B00051;
 }
 /*-----indicator2-------*/
 .tm_navbar .nav ul .sf-sub-indicator {
@@ -468,6 +468,7 @@ header {
 }
 .box2 {
 	background: #B00051;
+	padding: 10px;
 }
 .box2 figure {
 	width: 100%;

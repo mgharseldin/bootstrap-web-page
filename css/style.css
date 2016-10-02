@@ -1,26 +1,4 @@
 
-.imageClip{
-    width:30%;
-    height: auto;
-    overflow:hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------ template stylization ------*/
 body {
 	background: #2f3133 url(../img/patternbg.jpg) 0 0 repeat;
@@ -283,7 +261,7 @@ header {
 	padding: 0;
 	border: none;
 	border-radius: 0;
-	text-shadow: 1px 1px 2px #333639;
+	text-shadow: 1px 1px 2px #9099A2;
 }
 .tm_navbar .nav > li > a .sf-sub-indicator {
 	background: url(../img/indicator.png) no-repeat 0 bottom;
@@ -296,18 +274,18 @@ header {
 	z-index: 5;
 }
 .tm_navbar .nav li a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
-	color: #ffcbd2;
+	color:  #6D7993;
 	text-decoration: none;
 }
 .tm_navbar .nav > .active > a, .tm_navbar .nav > .active > a:hover, .tm_navbar .nav > .active > a:focus {
-	color: #ffcbd2;
+	color:  #6D7993;
 	background: transparent;
 }
 .tm_navbar .nav > li.sfHover.active > a .sf-sub-indicator, .tm_navbar .nav > li.active > a .sf-sub-indicator {
 	background-position: 0 0;
 }
 .tm_navbar .nav > li.sfHover > a, .tm_navbar .nav > li.sfHover > a:hover, .tm_navbar .nav > li > a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
-	color: #ffcbd2;
+	color: #6D7993;
 	background: transparent;
 }
 /*---------submenu1-------------*/
@@ -321,7 +299,7 @@ header {
 	list-style: none;
 	zoom: 1;
 	z-index: 11;
-	background: #eb5368;
+	background:  #6D7993;
 	margin: 0;
 	text-align: center;
 }
@@ -398,7 +376,7 @@ header {
 	background: url(../img/dotted2.png) top center repeat-x;
 }
 .tm_navbar .nav ul ul li a {
-	color: #eb5368;
+	color:  #6D7993;
 	text-shadow: none;
 }
 .tm_navbar .nav ul ul li a:hover {
