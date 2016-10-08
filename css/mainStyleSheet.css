@@ -2,7 +2,7 @@
 
 /*------ template stylization ------*/
 body {
-	background: #2f3133 url(../img/patternbg.jpg) 0 0 repeat;
+	background: #2f3133;
 }
 /*----------- Back to top --------------*/
 #toTop {
@@ -27,16 +27,16 @@ body {
 .row_1 {
 	text-align: center;
 	padding: 30px 0;
-	background: #2f3133 url(../img/patternbg.jpg) 0 0 repeat;
+	background: #2f3133;
 }
 .row_2 {
 	text-align: center;
 	padding: 22px 0 0;
-	background: #2f3133 url(../img/patternbg.jpg) 0 0 repeat;
+	background: #2f3133;
 }
 .row_3 {
 	padding: 43px 0 13px;
-	background: url(../img/pattern2.jpg) 0 0 repeat;
+	background: url;
 }
 .row_4 {
 	padding: 30px 0 81px;
@@ -70,15 +70,17 @@ body {
 	padding: 40px 0 40px;
 	background: #ffffff;
 }
-/*------------links headings-----------*/
+/*------------small about me-----------*/
 p {
 	font-family: 'Arial', sans-serif;
 	font-size: 15px;
 	line-height: 22px;
-	color: #adadad;
+	color: #474848;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 11px;
+
+/*------------links headings-----------*/
 }
 h2 {
 	font-family: 'Georgia', serif;
@@ -275,18 +277,18 @@ header {
 	z-index: 5;
 }
 .tm_navbar .nav li a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
-	color: #3F0D32;
+	color: #B00051;
 	text-decoration: none;
 }
 .tm_navbar .nav > .active > a, .tm_navbar .nav > .active > a:hover, .tm_navbar .nav > .active > a:focus {
-	color: #3F0D32;
+	color: #B00051;
 	background: transparent;
 }
 .tm_navbar .nav > li.sfHover.active > a .sf-sub-indicator, .tm_navbar .nav > li.active > a .sf-sub-indicator {
 	background-position: 0 0;
 }
 .tm_navbar .nav > li.sfHover > a, .tm_navbar .nav > li.sfHover > a:hover, .tm_navbar .nav > li > a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
-	color: #3F0D32;
+	color: #B00051;
 	background: transparent;
 }
 /*---------submenu1-------------*/
@@ -300,7 +302,7 @@ header {
 	list-style: none;
 	zoom: 1;
 	z-index: 11;
-	background: #3F0D32;
+	background: #B00051;
 	margin: 0;
 	text-align: center;
 }
@@ -377,11 +379,11 @@ header {
 	background: url(../img/dotted2.png) top center repeat-x;
 }
 .tm_navbar .nav ul ul li a {
-	color: #3F0D32;
+	color: #B00051;
 	text-shadow: none;
 }
 .tm_navbar .nav ul ul li a:hover {
-	color: #474848;
+	color: #B00051;
 }
 /*-----indicator2-------*/
 .tm_navbar .nav ul .sf-sub-indicator {
@@ -455,7 +457,7 @@ header {
 	transition: all 0.2s ease;
 }
 .box1 {
-	background: #3F0D32;
+	background: #006884;
 }
 .box1 figure {
 	width: 100%;
@@ -467,7 +469,7 @@ header {
 	color: #ffffff;
 }
 .box2 {
-	background: #7F7739;
+	background: #B00051;
 	padding: 10px;
 }
 .box2 figure {
@@ -481,7 +483,7 @@ header {
 	color: #ffffff;
 }
 .box3 {
-	background: #8B1E6D;
+	background: #F68370;
 }
 .box3 figure {
 	width: 100%;
@@ -515,7 +517,7 @@ header {
 .box4 {
 	overflow: hidden;
 	position: relative;
-	background: #FFFFFF;
+	background: #ffffff;
 	margin-bottom: 30px;
 }
 .list3 li figure {
@@ -1273,7 +1275,7 @@ address .info p:first-child {
 /*--------- footer --------- */
 footer {
 	padding: 64px 0;
-	background: url("../img/linefooter.jpg") top center repeat-x;
+ color: #9099A2;
 }
 /*--------------social----------------*/
 .social_icons {
@@ -1284,6 +1286,7 @@ footer {
 	position: relative;
 	margin: 28px 0 0;
 	z-index: 10;
+	
 }
 .social_icons > li {
 	float: left;
@@ -1297,12 +1300,14 @@ footer {
 	width: 32px;
 	height: 31px;
 	overflow: hidden;
+	background-color: #B00051;
 }
 .social_icons > li a img {
 	position: relative;
 	top: 0;
 }
 .social_icons > li a:hover img {
+	background-color: #B00051;
 	position: relative;
 	top: -31px;
 }
@@ -1312,6 +1317,7 @@ footer {
 .smalllogo2 {
 	position: relative;
 	top: 5px;
+	background-color: #B00051;
 }
 
 }

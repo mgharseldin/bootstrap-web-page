@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MY Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Melissa Gharseldin">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/mainStyleSheet.css">
+
+ 
+
+
+<style>
+	
+	.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+	background-color:F68370; 
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+    background-color:#F68370; 
+}
+	
+	
+	</style>
+
+
+	
+
+
+
+
+
+
+</head>
+
+
+	<script>
+	jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 5000
+        });
+ 
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click(function () {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('#myCarousel').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+});
+	
+	</script>
+	
+
+
+
+<!--==============================My CSS style for the Gallery SLider and Thumbnails =================================-->
+
+	<body>
+	<!--==============================header=================================-->
+	<header id="header">
+		<div class="container">
+			<h1 class="navbar-brand navbar-brand_">
+				<a href="index.html"><img
+					src="/Users/Melissa/Desktop/logofooter.png" width="200"
+					height="100" alt=""></a>
+			</h1>
+		</div>
+		<div class="menuheader">
+			<div class="container">
+				<nav class="navbar navbar-default navbar-static-top tm_navbar"
+					role="navigation">
+					<ul class="nav sf-menu">
+						<li><a href="index.html">home</a>	
+						<li><a href="aboutMe.html">About Me</a></li>
+						<li class="active"><a href="myGallery.html">My Gallery</a></li>
+						<li><a href="myInspirations.html">Inspirations</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	
+	
+	
+	</header>
+	<!--==============================content=================================-->
+
+			<center>
+				<h2>M.Gharseldin</h2></center>
+
+				<div class="container">
+					<div class="jumbotron">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua.</p>
+
+
+				
+						
+						<!-- content -->
+				<div class="container">
+    <div id="main_area">
+        <!-- Slider -->
+        <div class="row">
+            <div class="col-sm-6" id="slider-thumbs">
+                <!-- Bottom switcher of slider -->
+                <ul class="hide-bullets">
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-0">
+                            <img src="http://placehold.it/150x150&text=zero">
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-9"><img src="http://placehold.it/150x150&text=9"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-10"><img src="http://placehold.it/150x150&text=10"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-11"><img src="http://placehold.it/150x150&text=11"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-12"><img src="http://placehold.it/150x150&text=12"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-13"><img src="http://placehold.it/150x150&text=13"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-14"><img src="http://placehold.it/150x150&text=14"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-xs-12" id="slider">
+                    <!-- Top part of the slider -->
+                    <div class="row">
+                        <div class="col-sm-12" id="carousel-bounding-box">
+                            <div class="carousel slide" id="myCarousel">
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item" data-slide-number="0">
+                                        <img src="http://placehold.it/470x480&text=M.Gharseldin's First Slider"></div>
+
+                                    <div class="item" data-slide-number="1">
+                                        <img src="http://placehold.it/470x480&text=1"></div>
+
+                                    <div class="item" data-slide-number="2">
+                                        <img src="http://placehold.it/470x480&text=2"></div>
+
+                                    <div class="item" data-slide-number="3">
+                                        <img src="http://placehold.it/470x480&text=3"></div>
+
+                                    <div class="item" data-slide-number="4">
+                                        <img src="http://placehold.it/470x480&text=4"></div>
+
+                                    <div class="item" data-slide-number="5">
+                                        <img src="http://placehold.it/470x480&text=5"></div>
+                                    
+                                    <div class="item" data-slide-number="6">
+                                        <img src="http://placehold.it/470x480&text=6"></div>
+                                    
+                                    <div class="item" data-slide-number="7">
+                                        <img src="http://placehold.it/470x480&text=7"></div>
+                                    
+                                    <div class="item" data-slide-number="8">
+                                        <img src="http://placehold.it/470x480&text=8"></div>
+                                    
+                                    <div class="item" data-slide-number="9">
+                                        <img src="http://placehold.it/470x480&text=9"></div>
+                                    
+                                    <div class="item" data-slide-number="10">
+                                        <img src="http://placehold.it/470x480&text=10"></div>
+                                    
+                                    <div class="item" data-slide-number="11">
+                                        <img src="http://placehold.it/470x480&text=11"></div>
+                                    
+                                    <div class="item" data-slide-number="12">
+                                        <img src="http://placehold.it/470x480&text=12"></div>
+
+                                    <div class="item" data-slide-number="13">
+                                        <img src="http://placehold.it/470x480&text=13"></div>
+
+                                    <div class="item" data-slide-number="14">
+                                        <img src="http://placehold.it/470x480&text=14"></div>
+
+                                    <div class="item" data-slide-number="15">
+                                        <img src="http://placehold.it/470x480&text=15"></div>
+                                </div>
+                                <!-- Carousel nav -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Slider-->
+        </div>
+
+    </div>
+</div>
+</div>
+
+<center>
+<h2>
+	Please Contact me and let me know what you think!
+	<h></h>
+</h2>
+</center>
+<p>If you don't have the time, I understand, kindly let me
+know by clicking on the thumbs up or down link to share your
+opinion.</p>
+</body>
+	
+	
+	
+					<!-- footer -->
+					<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4 footercol">
+								<ul class="social_icons clearfix">
+									<li><a href="#"><img src="../assets/glyphocons social/glyphicons-social-19-gmail.png"></a></li>
+									<li><a href="#"><img src="../assets/glyphocons social/glyphicons-social-3-google-plus.png"></a></li>
+
+								</ul>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 footerlogo footercol">
+								<a class="smalllogo2 logo" href="contact.html"><img src="../assets/glyphocons social/glyphicons-social-14-e-mail-envelope.png"></a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 footercol"></div>
+						</div>
+					</div>
+				</footer>
+
+			</body>
+			</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		
+</body>
+</html>
